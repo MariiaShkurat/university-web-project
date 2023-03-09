@@ -1,0 +1,17 @@
+      <a @click="$router.push('/')" style="padding: 10px;">Home</a>
+      <a @click="$router.push('/professors')" style="padding: 10px;">Professors</a>
+      <a @click="$router.push('/faculty')" style="padding: 10px;">Faculty</a>
+      <a @click="$router.push('/teacher')" style="padding: 10px;">Teacher</a>
+      <a @click="$router.push('/discipline')" style="padding: 10px;">Discipline</a>
+      <a @click="$router.push('/group')" style="padding: 10px;">Group</a>
+      <a @click="$router.push('/department')" style="padding: 10px;">Department</a>
+      <a @click="$router.push('/add')" style="padding: 10px;">All_Links</a>
+
+      <li><a @click="$router.push('/')">Home</a></li>
+              <li><a @click="$router.push('/professors')">Professors</a></li>
+              <li><a @click="$router.push('/faculty')">Faculty</a></li>
+              <li><a @click="$router.push('/teacher')">Teacher</a></li>
+              <li><a @click="$router.push('/discipline')">Discipline</a></li>
+              <li><a @click="$router.push('/group')">Group</a></li>
+              <li><a @click="$router.push('/department')">Department</a></li>
+              <li><a @click="$router.push('/add')">All_Links</a></li>
