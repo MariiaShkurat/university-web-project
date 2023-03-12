@@ -192,7 +192,6 @@ export default {
       GroupDataServices.getAll()
         .then((res) => {
           this.groups = res.data;
-          console.log(res.data);
           console.log(this.groups);
         })
         .catch((e) => {
@@ -203,7 +202,6 @@ export default {
       TeacherDataServices.getAll()
         .then((res) => {
           this.teachers = res.data;
-          console.log(res.data);
           console.log(this.teachers);
         })
         .catch((e) => {
@@ -214,7 +212,6 @@ export default {
       DisciplineDataService.getAll()
         .then((res) => {
           this.disciplines = res.data;
-          console.log(res.data);
           console.log(this.disciplines);
         })
         .catch((e) => {
@@ -235,7 +232,6 @@ export default {
         ScheduleDataService.create(data)
           .then((res) => {
             this.schedule.id = res.data.ID;
-            console.log(res.data);
             this.submitted = true;
             this.$router.push(`/schedule`);
           })

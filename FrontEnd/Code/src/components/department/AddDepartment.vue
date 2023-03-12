@@ -124,11 +124,7 @@ export default {
     getFaculty() {
       FacultyDataService.getAll()
         .then((res) => {
-          console.log(0);
           this.faculties = res.data;
-          console.log(this.faculties);
-          console.log(1);
-          console.log(res.data);
         })
         .catch((e) => {
           console.log(e);
@@ -145,7 +141,6 @@ export default {
         DepartmentDataService.create(data)
           .then((res) => {
             this.department.id = res.data.ID;
-            console.log(res.data);
             this.submitted = true;
             this.$router.push(`/department`);
           })

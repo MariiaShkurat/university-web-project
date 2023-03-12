@@ -114,11 +114,7 @@ export default {
     getFaculty() {
       FacultyDataService.getAll()
         .then((res) => {
-          console.log(0);
           this.faculties = res.data;
-          console.log(this.faculties);
-
-          console.log(res.data);
         })
         .catch((e) => {
           console.log(e);
@@ -130,8 +126,6 @@ export default {
         this.department.department_name = res.data.NAME;
         this.department.short_name = res.data.SHORT_NAME;
         this.department.id = res.data.ID;
-
-        console.log(res.data);
       });
     },
     updateDepartment() {
@@ -146,7 +140,6 @@ export default {
         DepartmentDataService.update(data)
           .then((res) => {
             alert("Department successfully edited!");
-            console.log(res.data);
           })
           .catch((e) => {
             console.log(e);

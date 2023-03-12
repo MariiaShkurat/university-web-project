@@ -59,7 +59,6 @@ export default {
       TeacherDataServices.getAll()
         .then((res) => {
           this.teachers = res.data;
-          console.log(res.data);
           console.log(this.teachers);
         })
         .catch((e) => {
@@ -72,7 +71,6 @@ export default {
           alert(
             "You have successfully deleted teacher: " + teacher.NAME + " !"
           );
-          console.log(res.data);
           this.getTeachers();
         })
         .catch((e) => {

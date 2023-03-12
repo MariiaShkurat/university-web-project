@@ -93,7 +93,6 @@ export default {
               sch.discipline_name = res.data.NAME;
             });
           });
-          console.log(res.data);
           console.log(this.schedules);
         })
         .catch((e) => {
@@ -106,7 +105,6 @@ export default {
           alert(
             "You have successfully deleted schedule: " + schedule.NAME + " !"
           );
-          console.log(res.data);
           this.getSchedules();
         })
         .catch((e) => {

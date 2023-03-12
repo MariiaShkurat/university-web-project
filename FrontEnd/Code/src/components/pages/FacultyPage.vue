@@ -66,7 +66,6 @@ export default {
           alert(
             "You have successfully deleted faculty: " + faculty.NAME + " !"
           );
-          console.log(res.data);
           this.getFaculties();
         })
         .catch((e) => {

@@ -105,7 +105,6 @@ export default {
         NewsDataService.create(data)
           .then((res) => {
             this.news.id = res.data.ID;
-            console.log(res.data);
             this.submitted = true;
             this.$router.push(`/news`);
           })

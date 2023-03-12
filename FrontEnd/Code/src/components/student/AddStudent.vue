@@ -150,7 +150,6 @@ export default {
       GroupDataServices.getAll()
         .then((res) => {
           this.groups = res.data;
-          console.log(res.data);
           console.log(this.groups);
         })
         .catch((e) => {
@@ -169,7 +168,6 @@ export default {
         StudentDataService.create(data)
           .then((res) => {
             this.student.id = res.data.ID;
-            console.log(res.data);
             this.submitted = true;
             this.$router.push(`/students`);
           })

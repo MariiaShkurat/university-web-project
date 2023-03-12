@@ -64,7 +64,6 @@ export default {
       NewsDataService.delete(news.ID)
         .then((res) => {
           alert("You have successfully deleted news: " + news.HEADER + " !");
-          console.log(res.data);
           this.getNews();
         })
         .catch((e) => {

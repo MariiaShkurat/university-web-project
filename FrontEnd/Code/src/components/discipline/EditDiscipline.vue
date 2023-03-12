@@ -69,8 +69,6 @@ export default {
       DisciplineDataService.get(id).then((res) => {
         this.discipline.name = res.data.NAME;
         this.discipline.id = res.data.ID;
-
-        console.log(res.data);
       });
     },
     updateDiscipline() {
@@ -83,7 +81,6 @@ export default {
         DisciplineDataService.update(data)
           .then((res) => {
             alert("Discipline successfully edited!");
-            console.log(res.data);
           })
           .catch((e) => {
             console.log(e);

@@ -50,7 +50,6 @@ export default {
       DisciplineDataService.getAll()
         .then((res) => {
           this.disciplines = res.data;
-          console.log(res.data);
           console.log(this.disciplines);
         })
         .catch((e) => {
@@ -65,7 +64,6 @@ export default {
               discipline.NAME +
               " !"
           );
-          console.log(res.data);
           this.getDisciplines();
         })
         .catch((e) => {

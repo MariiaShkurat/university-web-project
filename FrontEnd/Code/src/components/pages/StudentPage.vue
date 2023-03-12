@@ -71,7 +71,6 @@ export default {
             });
           });
 
-          console.log(res.data);
           console.log(this.students);
         })
         .catch((e) => {
@@ -84,7 +83,6 @@ export default {
           alert(
             "You have successfully deleted student: " + student.NAME + " !"
           );
-          console.log(res.data);
           this.getStudents();
         })
         .catch((e) => {

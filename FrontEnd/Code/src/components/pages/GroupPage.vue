@@ -64,7 +64,6 @@ export default {
             });
           });
 
-          console.log(res.data);
           console.log(this.groups);
         })
         .catch((e) => {
@@ -75,7 +74,6 @@ export default {
       GroupDataServices.delete(group.ID)
         .then((res) => {
           alert("You have successfully deleted group: " + group.NAME + " !");
-          console.log(res.data);
           this.getGroups();
         })
         .catch((e) => {

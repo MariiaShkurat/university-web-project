@@ -63,7 +63,6 @@ export default {
               dep.FACULTY_NAME = res.data.NAME;
             });
           });
-        
         })
         .catch((e) => {
           console.log(e);
@@ -77,7 +76,6 @@ export default {
               department.NAME +
               " !"
           );
-          console.log(res.data);
           this.getDepartment();
         })
         .catch((e) => {

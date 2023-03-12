@@ -87,7 +87,6 @@ export default {
     getFaculty(id) {
       FacultyDataService.get(id).then((res) => {
         this.faculty = res.data;
-        console.log(res.data);
       });
     },
     updateFaculty() {
@@ -96,7 +95,6 @@ export default {
         FacultyDataService.update(this.faculty)
           .then((res) => {
             alert("Faculty successfully edited!");
-            console.log(res.data);
           })
           .catch((e) => {
             console.log(e);

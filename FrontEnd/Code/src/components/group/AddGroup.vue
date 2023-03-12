@@ -136,8 +136,6 @@ export default {
           console.log(String(parseInt("3.9")));
           this.departments = res.data;
 
-          console.log(res.data);
-
           console.log(this.departments);
         })
         .catch((e) => {
@@ -155,7 +153,6 @@ export default {
         GroupDataServices.create(data)
           .then((res) => {
             this.group.id = res.data.ID;
-            console.log(res.data);
             this.submitted = true;
             this.$router.push(`/group`);
           })

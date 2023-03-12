@@ -120,7 +120,6 @@ export default {
         .then((res) => {
           this.departments = res.data;
           console.log(this.departments);
-          console.log(res.data);
         })
         .catch((e) => {
           console.log(e);
@@ -132,7 +131,6 @@ export default {
         this.group.department_id = res.data.DEPARTMENT_ID;
         this.group.group_name = res.data.NAME;
         this.group.course = res.data.COURSE;
-        console.log(res.data);
       });
     },
     updateGroup() {
@@ -147,7 +145,6 @@ export default {
         GroupDataServices.update(data)
           .then((res) => {
             alert("Group successfully edited!");
-            console.log(res.data);
           })
           .catch((e) => {
             console.log(e);

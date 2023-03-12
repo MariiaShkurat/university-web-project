@@ -92,7 +92,6 @@ export default {
 
         this.news.news_header = res.data.HEADER;
         this.news.news_body = res.data.NEWS_BODY;
-        console.log(res.data);
       });
     },
     updateNews() {
@@ -107,7 +106,6 @@ export default {
         NewsDataService.update(data)
           .then((res) => {
             alert("News successfully edited!");
-            console.log(res.data);
           })
           .catch((e) => {
             console.log(e);

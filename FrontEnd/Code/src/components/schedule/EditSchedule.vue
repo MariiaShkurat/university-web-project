@@ -178,7 +178,6 @@ export default {
       GroupDataServices.getAll()
         .then((res) => {
           this.groups = res.data;
-          console.log(res.data);
           console.log(this.groups);
         })
         .catch((e) => {
@@ -189,7 +188,6 @@ export default {
       TeacherDataServices.getAll()
         .then((res) => {
           this.teachers = res.data;
-          console.log(res.data);
           console.log(this.teachers);
         })
         .catch((e) => {
@@ -200,7 +198,6 @@ export default {
       DisciplineDataService.getAll()
         .then((res) => {
           this.disciplines = res.data;
-          console.log(res.data);
           console.log(this.disciplines);
         })
         .catch((e) => {
@@ -216,7 +213,6 @@ export default {
         this.schedule.schedule_name = res.data.NAME;
         this.schedule.time = res.data.TIME;
         this.schedule.classroom = res.data.CLASSROOM;
-        console.log(res.data);
       });
     },
     updateSchedule() {
@@ -234,7 +230,6 @@ export default {
         ScheduleDataService.update(data)
           .then((res) => {
             alert("Schedule successfully edited!");
-            console.log(res.data);
           })
           .catch((e) => {
             console.log(e);

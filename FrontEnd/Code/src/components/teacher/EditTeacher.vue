@@ -136,7 +136,6 @@ export default {
         this.teacher.surname = res.data.SURNAME;
         this.teacher.email = res.data.EMAIL;
         this.teacher.phone = res.data.PHONE;
-        console.log(res.data);
       });
     },
     updateTeacher() {
@@ -154,7 +153,6 @@ export default {
           .then((res) => {
             alert("Teacher successfully edited!");
             // this.submitted = true;
-            console.log(res.data);
             // this.$router.push('/professors');
             // setTimeout(()=> router.push('/professors'), 2000);
           })
