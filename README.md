@@ -11,7 +11,7 @@ This is a web application for managing a university database, developed using No
 
 \\Usage\\
 
-The web application allows users to view, add, edit, and delete records in the university database.
+This web application allows users to view, add, edit, and delete records in the university database.
 
 \\Credits\\
 
