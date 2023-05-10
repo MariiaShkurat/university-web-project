@@ -1,6 +1,6 @@
 \\University Database Web Application\\
 
-This is a web application for managing a university database, developed using Node.js, Vue.js, and Vite using Oracle database.
+This is a web application for managing a university database, developed using Node.js, Vue.js, Vite using Oracle database.
 
 \\Installation\\
 
